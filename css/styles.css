@@ -29,7 +29,8 @@ p {
 
 /* header */
 .header {
-    background: 1px solid #E7E9FC;;
+    background: 1px solid #E7E9FC;
+   
 }
 
 .header-container {
@@ -64,6 +65,7 @@ button {
 
 .header {
     color: #2E2F42;
+    border-bottom: 1px solid #e7e9fc
 }
 .header-nav {
 background-color: #fff;
@@ -160,8 +162,7 @@ background-color: #2e2f42;
 }
 
 .heroimage-title {
-    width: 496px;
-    
+    max-width: 496px;
     margin: 0 auto 48px;
     align-items: center;
    }
@@ -175,20 +176,20 @@ background-color: #2e2f42;
     color: #fff;
     text-align: center;
 }
-.button{
-display: block;
-text-align: center;
-   margin-top: 188px;
-
+.button {
+    display: block;
+    text-align: center;
+    margin-top: 188px;
+    height: 56px;
     flex-direction: row;
     border-radius: 4px;
     border: 0px;
     padding: 16px 32px;
     margin: 0 auto;
-    width: 169px;
+    min-width: 169px;
 }
-.button {    
-        font-weight: 500;
+.button {  
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: #4d5ae5;
@@ -200,9 +201,14 @@ text-align: center;
 }
 /* sections1 */
 .team {
+    padding: 120px 0;
      display: flex;
         align-items: center;
     background-color: #f4f4fd;
+   
+    }
+.team-cont {
+          
 }
 .team-title {
     font-weight: 700;
@@ -225,6 +231,7 @@ padding-right: 156px;
     padding: 0;
 }
 .team-item {
+    display: block;
 background-color: #fff;
 border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
@@ -232,6 +239,8 @@ border-radius: 0 0 4px 4px;
 margin-bottom: 120px;
 }
 .team-subtitle {
+    text-align: center;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -249,21 +258,33 @@ margin-bottom: 120px;
 }
 .team-wrap {
     display: flex;
+    padding: 32px 0;
         align-items: center;
         justify-content: center;
         flex-direction: column;
       border-radius: 0 0 4px 4px;
-        padding: 0px 0px 32px 0px;
-        width: 264px;
+         width: 264px;
         height: 380px;
         box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
             background: #fff;
 }
 /* sections2 */
 .benefits {
-    padding: 120px 0 120px;
+    padding: 120px 0;
+  
 }
-.visually-hidden:not(:focus):not(:active) {...}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+}
 .benefits-title {
     text-transform: capitalize;
     color: #2E2F42;
@@ -275,27 +296,46 @@ margin-bottom: 120px;
 }
 
 .benefits-list {
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 24px;
-    list-style-type: none;
-    margin: 0 auto;
-    }
-
+       }
 .benefits-item {
+    display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+        line-height: 1.5;
+}
+.benefits-div {
     display: flex;
         align-items: center;
-        gap: 24px;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 0 0 4px 4px;
+        padding: 0px 0px 8px 0px;
+        width: 264px;
+        height: 104px;
+}
+
+.benefits-item {
+    box-sizing: border-box;
+list-style-type: none;
+              gap: 24px;
         margin-right: 24px;
     margin-bottom: 15px;
     background-color: #fff;
+    width: calc((100% - 3 * 24px) / 4);
 }
 .benefits-list, 
 .benefits-item {
     display: flex;
-    flex-basis: calc((100% - 72px) / 4);
-}
+    }
+
 .benefits-subtitle {
     margin-bottom: 8px;
     color: #2E2F42;
@@ -303,9 +343,20 @@ margin-bottom: 120px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    
+       
+}
+.benef-div {
+display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+
 }
 
 .benefits-text {
+
     color: #434455;
     font-size: 16px;
     font-weight: 400;
@@ -314,6 +365,10 @@ margin-bottom: 120px;
 
 }
 /* sections3 */
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .portfolio-title {
    flex-direction: row;
    text-align: center;
@@ -336,6 +391,7 @@ list-style-type: none;
 flex-basis: calc((100% - 48px) / 6)
 }
 .portfolio-item {
+display: block;
 margin-bottom: 72px;
 flex-basis: calc((100%-48px) / 6)
 }
