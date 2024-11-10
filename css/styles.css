@@ -315,12 +315,12 @@ justify-content: center;
     margin-right: 24px;
     margin-bottom: 15px;
     background-color: #fff;
-    flex-basis: calc((100% - 3 * 24px) / 4);
+   
 }
 .benefits-item {
     display: block;
     display: flex;
-    
+    width: calc((100% - 72px) / 4);
 }
 .benefits-hhh {
     display: block;
