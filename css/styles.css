@@ -309,7 +309,7 @@ justify-content: center;
 
 
 .benefits-item {
-    flex-basis: calc((1128 - 3 * 24px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
     box-sizing: border-box;
     list-style-type: none;
     gap: 24px;
@@ -335,6 +335,7 @@ justify-content: center;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
  }  
 
 .benefits-text {
