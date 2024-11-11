@@ -309,29 +309,16 @@ justify-content: center;
 
 
 .benefits-item {
- 
-    box-sizing: border-box;
-    list-style-type: none;
-    gap: 24px;
-    margin-right: 24px;
-    margin-bottom: 15px;
+    
     background-color: #fff;
    
 }
-.benefits-item {
-    display: block;
-    display: flex;
-   
-}
+
 .benefits-item {
     width: calc((100% - 72px) / 4);
 }
 
-.benefits-hhh {
-    display: block;
-    margin-bottom: 8px 0;
-      padding: 0;
-}
+
 .benefits-subtitle {
     color: #2E2F42;
     font-size: 20px;
